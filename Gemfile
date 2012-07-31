@@ -28,7 +28,7 @@ group :development, :test do
   gem 'webrat'
   gem 'rspec-rails', '>= 2.0.0.beta.20'
   gem 'simplecov', :require => false
-  gem 'sqlite3', '1.3.5'
+  
 end
 
 group :production do

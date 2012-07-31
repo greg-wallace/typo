@@ -2173,3 +2173,4 @@ Started GET "/images/theme/bg2.jpg" for 127.0.0.1 at 2012-07-31 15:42:37 -0700
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blogs".* FROM "blogs" ORDER BY id LIMIT 1[0m
 Sent file /Users/Greg/rails_projects/typo/themes/bootstrap/images/bg2.jpg (0.2ms)
 Completed 200 OK in 22ms
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/Greg/rails_projects/typo/config/environment.rb:5)

@@ -1,14 +1,18 @@
+login: &login
+  adapter: postgresql
+  host: localhost
+  username: root
+  password:
+
+
 development:
-  adapter: sqlite3
-  database: db/db_development
-  timeout: 5000
+  database: typo_dev
+  <<: *login
 
 test:
-  adapter: sqlite3
-  database: db/db_test
-  timeout: 5000
+  database: typo_tests
+  <<: *login
 
 production:
-  adapter: sqlite3
-  database: db/db_production
-  timeout: 5000
+  database: typo
+  <<: *login
