@@ -21,6 +21,7 @@ gem 'acts_as_list'
 gem 'acts_as_tree_rails3'
 gem 'recaptcha', :require => 'recaptcha/rails', :branch => 'rails3'
 
+
 group :development, :test do
   gem 'ruby-debug19'
   gem 'factory_girl', '2.2.0'
@@ -28,4 +29,8 @@ group :development, :test do
   gem 'rspec-rails', '>= 2.0.0.beta.20'
   gem 'simplecov', :require => false
   gem 'sqlite3', '1.3.5'
+end
+
+group :production do
+  gem 'pg', '0.12.2'
 end
