@@ -12,7 +12,7 @@
      <div class='navbar navbar-fixed-top'>
        <div class='navbar-inner'>
          <div class='container'>
-			 <a class="brand" href="http://localhost:3000">Greg Wallace</a>
+			 <a class="brand" href="#">Greg Wallace</a>
 	
            <ul class='nav'>
              <%= content_tag(:li, link_to(_('Home'), this_blog.base_url, {:class => render_active_home}))%>
@@ -26,10 +26,10 @@
 	
      <div id='page' class='container'>
        <div class='row'>
-         <div class='span8'>
+         <div class='span10'>
            <%= yield %>
          </div>
-         <div id='sidebar' class='span4'>
+         <div id='sidebar' class='span2'>
            <%= render_sidebars %>
          </div>
 			</div>
