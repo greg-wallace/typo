@@ -18,6 +18,11 @@
              <%= content_tag(:li, link_to(_('Home'), this_blog.base_url, {:class => render_active_home}))%>
              <%= content_tag(:li, link_to(_('Articles'), {:controller => 'categories'}, {:class => render_active_articles}))%>
              <%= show_pages_links %>
+				<% if signed_in? %>
+		          <li><%= link_to "Admin", admin_path %></li>
+			 <% else %>
+	            <li><%= link_to "Sign in", signin_path %></li>
+	          <% end %>
            </ul>
          </div>
 
