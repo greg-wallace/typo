@@ -18,7 +18,7 @@
              <%= content_tag(:li, link_to(_('Home'), this_blog.base_url, {:class => render_active_home}))%>
              <%= content_tag(:li, link_to(_('Articles'), {:controller => 'categories'}, {:class => render_active_articles}))%>
              <%= show_pages_links %>
-			 <% if signed_in? %>
+			 <% if @article.allow_comments? %>
 	            <li><a href="#">Sign Out</a></li>
 			 <% else %>
 	            <li><a href="#">Sign In</a></li>
